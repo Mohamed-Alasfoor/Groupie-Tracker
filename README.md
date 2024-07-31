@@ -25,6 +25,9 @@ Techonogies used: Golang, HTML/CSS
 
 ![Screenshot 2024-07-31 104449](https://github.com/user-attachments/assets/4391119b-9db0-4d7a-a17e-f444bc221eed)
 
+![image](https://github.com/user-attachments/assets/5ed6a539-bb2b-48b4-a040-598791c9fc8a)
+
+
 ## Authors
 
 - [Mohamed Alasfoor](https://github.com/Mohamed-Alasfoor)
