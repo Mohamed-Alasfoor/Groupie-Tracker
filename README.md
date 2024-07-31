@@ -3,8 +3,10 @@ Fetching Artists API
 
 ## Description
 
-This project is about fetching API's about artists that contain there team info, concert locations, dates, and relation.
+This project is about fetching API's of artists that contain their team info, concert locations, dates, and relations.
+
 We manipulated the fetched data to create a web-server that shows artists info.
+
 Techonogies used: Golang, HTML/CSS
 
 ## Usage
@@ -17,7 +19,7 @@ Techonogies used: Golang, HTML/CSS
 
   ## Web-site Walkthrough
 
-![Screenshot 2024-07-31 104257](https://github.com/user-attachments/assets/95433df7-e2d3-4628-b439-34ee7789d3a0)
+![image](https://github.com/user-attachments/assets/e3af1c3d-de73-4016-9e26-8e45558cc68b)
 
 ![Screenshot 2024-07-31 104332](https://github.com/user-attachments/assets/0d3add9c-802b-4df6-b9e9-dbe360d1e877)
 
