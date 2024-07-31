@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Groupie Tracker</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<style>
+    body {
+    
+      background-image: url('static/css/synthwave-desert-.jpg'); /* Add the background image */
+      background-size: cover; /* Makes sure the image covers the whole background */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed; /* Fixes the background while scrolling */
+      background-position: center; /* Centers the image */
+    }
+</style>
+<body>
+    <h1>Groupie Tracker</h1>
+    <div class="search-container">
+        <form method="get" action="/">
+            <input type="text" name="search" placeholder="Search by name">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        {{range .}}
+        <div class="artist">
+            <a href="/artist?id={{.ID}}">
+                <img src="{{.Image}}" alt="{{.Name}}">
+            </a>
+            <h2>{{.Name}}</h2>
+        </div>
+        {{end}}
+    </div>
+        <div class="footer">
+            <p>&copy; 2024, Mohamed Alasfoor and Zainab Nasser</p>
+        </div>
+</body>
+</html>

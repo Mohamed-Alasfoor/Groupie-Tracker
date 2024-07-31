@@ -1,0 +1,42 @@
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-container {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(222, 94, 214);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.error-container h1 {
+  font-size: 6em;
+  color: #30051d;
+}
+
+.error-container p {
+  font-size: 3em;
+  margin: 40px 0;
+}
+
+.error-container .button {
+  display: inline-block;
+  padding: 24px 48px;
+  font-size: 2.4em;
+  color: #fff;
+  background-color: #472e3f;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.error-container .button:hover {
+  background-color: #5f2558;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error</title>
+    <link rel="stylesheet" href="/static/css/error.css">
+</head>
+<style>
+    body {
+    
+    background-image: url('static/css/synthwave-desert-.jpg'); /* Add the background image */
+      background-size: cover; /* Makes sure the image covers the whole background */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed; /* Fixes the background while scrolling */
+      background-position: center; /* Centers the image */
+    }
+</style>
+<body>
+    <div class="error-container">
+        <h1>Error {{.Code}}</h1>
+        <p>{{.Message}}</p>
+        <a href="/" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

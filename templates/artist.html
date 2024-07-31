@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{.Name}} - Groupie Tracker</title>
+    <link rel="stylesheet" href="/static/css/artist.css">
+</head>
+<style>
+    body {
+    
+        background-image: url('static/css/synthwave-desert-.jpg'); /* Add the background image */
+      background-size: cover; /* Makes sure the image covers the whole background */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed; /* Fixes the background while scrolling */
+      background-position: center; /* Centers the image */
+    }
+</style>
+<body>
+    <a href="/" class="back-button">Back to Home</a>
+    <div class="header">
+        <img src="{{.Image}}" alt="{{.Name}}">
+        <h2>{{.Name}}</h2>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h3>Start Year</h3>
+            <p>{{.StartYear}}</p>
+            <h3>First Album</h3>
+            <p>{{.FirstAlbum}}</p>
+        </div>
+        <div class="section">
+            <h3>Members</h3>
+            {{range .Members}}
+            <p>{{.}}</p>
+            {{end}}
+        </div>
+        <div class="section">
+            <h3>Concert Locations and Dates</h3>
+            {{range $location, $dates := .DatesByLocation}}
+            <div class="location-dates">
+                <h4><a href="https://www.google.com/maps/search/?api=1&query={{ $location }}" target="_blank">{{ $location }}</a></h4>
+                <ul>
+                    {{range $dates}}
+                    <li>{{.}}</li>
+                    {{end}}
+                </ul>
+            </div>
+            {{end}}
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024, Mohamed Alasfoor and Zainab Nasser</p>
+    </div>
+</body>
+</html>
